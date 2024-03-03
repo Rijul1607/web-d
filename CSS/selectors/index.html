@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        /* div{
+            background-color: aqua;
+        } */
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selectors for direct child*/
+        div>p{
+            color: blue;
+            background-color: black;
+        }
+        /* descendent selector */
+        div p {
+            color: blue;
+            background-color: black;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selectors */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+        p:first-child{
+            background-color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>im one</p>
+        <p>im two</p>
+    </main>
+    <div class="red">
+        i am a div
+        <p>im a para</p>
+        <article>
+
+            <p>hi</p>
+        </article>
+    </div>
+    <div id="green">im another one</div>
+    <a href="https://www.python4me.com/">go to python</a>
+</body>
+</html>
