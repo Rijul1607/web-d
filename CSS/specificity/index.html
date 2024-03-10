@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity and cascade</title>
+    <style>
+        .order>p{
+            font-weight: bolder;
+        }
+        .c{
+            border: 6px solid red;
+        }
+        .c>p{
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: lighter;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <!-- https://www.codewithharry.com/tutorial/css-specificity/ -->
+    <ol>
+        <li>Position and order of appearance: the order in which your CSS rules appear</li>
+        <li>Specificity: an algorithm that determines which CSS selector has the strongest match</li>
+        <li>Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS</li>
+        <li>Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type</li>
+    </ol>
+    <div class="order">
+        <h2>the order of specificity is:</h2>
+        <p> 
+
+            Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</p>
+    </div>
+    <div>
+        <h3>Specificity Calculation
+        </h3>
+        <ol>
+            <li>Universal Selector: 0</li>
+            <li>Element selectors and pseudo-elements: 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+            <li>ID selectors: 100</li>
+            <li>Inline styles: 1000</li>
+        </ol>
+    </div>
+    <div class="c"><code>
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+          }
+    </code>
+    <p>To calculate the specificity value of the selector a.harryclass.rohan-class[href]:hover, you can break down its components:
+
+        Element selectors: a contributes 1 point.
+        Class selectors: .harryclass and .rohan-class each contributes 10 points, totaling 20 points.
+        Attribute selector: [href] contributes 10 points.
+        Pseudo-class: :hover adds another 10 points.
+        Add up all these values:
+        
+        1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41.
+        
+        So, the specificity value of the selector a.harryclass.rohan-class[href]:hover will be 41.</p>
+</div>
+</body>
+</html>

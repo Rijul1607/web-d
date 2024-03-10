@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadows</title>
+    <style>
+        .box{
+            border: 2px black;
+            padding: 34px;
+            box-shadow: 5px 5px 15px 5px #e00b0b;
+            text-shadow: 2px 2px 4px #5508f0;
+            
+        }
+        .t{
+            outline: 2px solid blue;
+            outline-offset: 34px;
+            border: 2px solid red;
+            border-radius: 34px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">im a box</div>
+    <p class="t">Lorem ipsum dolor sit.</p>
+
+    <!-- h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+blur: The larger the value, the blurrier the shadow.
+spread: Expands or shrinks the shadow size.
+color: Defines the shadow color.
+inset: Makes the shadow inner. -->
+
+<!-- Position: Outlines don't take up space; they're drawn around the element, outside of any border.
+Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+Width: Borders can have varying widths on different sides, outlines have a uniform width.
+Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot. -->
+</body>
+</html>
