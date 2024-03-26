@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout2</title>
+    <style>
+        
+        
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        position: sticky;
+        top: 0;
+      }
+      nav {
+        background-color: green;
+        height: 63px;
+
+      }
+      ul li{
+        color: black;
+        display: inline;
+        padding: 20px;
+        
+        font-size: large;
+        font-weight: bolder;
+        font-family: poppins;
+
+      }
+      .container {
+        background-color: blue;
+        margin: 12px 34px;
+        padding: 55px 23px;
+        text-align: center;
+        /* height: 233px; */
+      }
+      .box1 {
+        background-color: green;
+        height: 70vh;
+        width: 45%;
+        display: inline-block;
+        margin: 0px 12px;
+        border-radius: 13px;
+        box-shadow: inset 6px -3px 20px 15px black;
+        
+      }
+      .box2 {
+        background-color: rgb(233, 9, 46);
+        height: 70vh;
+        width: 45%;
+        display: inline-block;
+        margin: 0px 12px;
+        /* top: -11px;
+    position: relative; */
+    border-radius: 13px;
+    box-shadow: inset 7px -3px 20px 0px blue;
+      }
+      .box1 img{
+        /* top: 10px;
+        position: relative; */
+        border-radius: 13px;
+      }
+      .box2 img{
+        /* top: 10px;
+        position: relative; */
+        border-radius: 13px;
+
+      }
+      footer {
+        height: 100px;
+        background-color: brown;
+      }
+      main {
+        background-color: black;
+        padding: 34px;
+      }
+      .text {
+        color: white;
+        text-align: center;
+        border: 2px solid whitesmoke;
+        border-radius: 30px;
+        padding: 34px;
+        margin: 50px 34vw;
+      }
+      .orangebox img{
+        height: 30px;
+        width: 32px;
+        /* background-color: orangered; */
+        position: fixed;
+        bottom: 12px;
+        right: 23px;
+        /* border-radius: 15px; */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li>Home</li>
+            <li>Content</li>
+            <li>Services</li>
+            <li>About</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="box1">
+            <img src="ben10.jpg" alt="" width="230">
+        </div>
+        <div class="box2">
+            <img src="image.png" alt="" width="230">
+        </div>
+      </div>
+      <div class="text">this is a good website</div>
+      <div class="orangebox">
+        <img src="1600w--kbTNqEWceg.webp" alt="">
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
