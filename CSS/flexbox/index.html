@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        display: flex;
+        height: 80vh;
+        /* horizaontall */
+        justify-content: center;
+        /* vertical */
+        align-items: center;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-content: center;
+        /* row-gap: 40px;
+            column-gap: 10px; */
+        gap: 30px 10px;
+        /* order is used to set the box as the given order */
+      }
+      .item {
+        height: 62px;
+        width: 62px;
+        border: 2px solid black;
+        margin: 4px;
+        background-color: blueviolet;
+      }
+      /* flex grow
+      flex shrink
+      align self */
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </main>
+  </body>
+</html>
