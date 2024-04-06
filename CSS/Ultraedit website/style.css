@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.right ul {
+  display: flex;
+  gap: 20px;
+}
+.right ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+.right ul li span {
+  padding: 0 5px;
+}
+
+.right img {
+  width: 40px;
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 43px;
+  margin: 70px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.first span {
+  font-size: 45px;
+}
+section span img {
+  margin: 0px 18px;
+}
+.first p {
+  width: 64vw;
+  font-size: 23px;
+  text-align: center;
+}
+.btn {
+  font-weight: bold;
+  color: white;
+  background-color: #2ea3f2;
+  padding: 20px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.small {
+  font-size: 13px;
+}
+.second {
+  max-width: 70vw;
+  margin: auto;
+}
+.bluebtn {
+  font-weight: bold;
+  color: white;
+  background-color: #2ea3f2;
+  padding: 20px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+.bluebtn a {
+  text-decoration: none;
+  color: white;
+}
+.greenbtn {
+  font-weight: bold;
+  color: white;
+  background-color: #00d084;
+  padding: 20px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+.greenbtn a {
+  text-decoration: none;
+  color: white;
+}
+.item {
+  background-color: #f9f9f9;
+  padding: 23px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.itemlang {
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.flex :nth-child(2) {
+  font-size: 23px;
+}
+.flex {
+  display: flex;
+  /* justify-content: center; */
+  gap: 10px;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 1145px) {
+  .grid {
+    grid-template-columns: 1fr;
+    /* background-color: red; */
+  }
+}
